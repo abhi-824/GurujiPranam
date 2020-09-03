@@ -1,64 +1,139 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-    display:grid;
-    grid-template-columns: 1fr 2.6fr;
+body {
+	display: grid;
+	grid-template-columns: 0.5fr 2.6fr 0.8fr;
 }
-.section1{
-    display:flex;
-    width:100%;
-    flex-direction: column;
+.image_sec {
+	width: 218px;
+	height: 218px;
+}
+.section1 {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #c4c4c4;
+}
+.section2 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+			0deg,
+			rgba(199, 237, 212, 0.68),
+			rgba(199, 237, 212, 0.68)
+		),
+		url('../res/bg.png') center center/cover;
+}
+.comment_box {
+	height: 174px;
+	width: 263px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+	background: url('../res/Rectangle3.png');
+}
+.content {
+	margin-right: 2rem;
+	padding: 2rem 1rem;
+}
+.btns {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.btn- {
+	border-radius: 50%;
+	padding: 0.3rem;
+}
+.btn-:hover {
+	cursor: pointer;
+	background: cornflowerblue;
+
+	transition: 1s;
+}
+.roar:hover {
+	cursor: not-allowed;
+	background: rgb(201, 123, 7);
+}
+.comment_box:hover {
+	border-radius: 59%;
+	transition: 1s;
+}
+.cards {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+.card {
+	position: relative;
+}
+.inner-card {
+	/* position: absolute; */
+	top: 0;
+	padding: 2rem;
+	background: rgba(196, 196, 196, 0.5);
+	margin: 1rem;
+	border-radius: 74px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hidden {
+	display: none !important;
+}
+.naya_bacha {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+	justify-content: space-between;
+}
+.naya_bacha h2 {
+	font-size: 1rem;
+}
+
+.load-kro2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100000;
+	background: black;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.disapper {
+	animation: vanish 1s forwards;
+}
+@keyframes vanish {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+.chat{
+    display: flex;
+    width:300px;
+    height:289px;
+    padding:1rem;
+    background: url("../res/Rectangle7.png");
     justify-content: center;
     align-items: center;
-    background: #C4C4C4;
-}
-.section2{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(0deg, rgba(199, 237, 212, 0.68), rgba(199, 237, 212, 0.68)), url('../res/bg.png') center center/cover;
-}
-.comment_box{
-    height:174px;
-    width:263px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    
-    background: url('../res/Rectangle3.png');
-}
-.content{
-    margin-right:2rem;
-    padding:2rem 1rem;  
-}
-.btns{
-    width: 100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.btn-{
-    border-radius:50%;
-    padding:0.3rem;
-}
-.btn-:hover{
-    cursor: pointer;    
-    background: cornflowerblue;
-    
-    transition:1s;
-}
-.roar:hover{
-    cursor: not-allowed;
-    background:rgb(201, 123, 7);
-}
-.comment_box:hover{
-    border-radius: 59%;
-    transition:1s;
 }

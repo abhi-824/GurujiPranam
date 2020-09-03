@@ -27,9 +27,13 @@
 		/>
 	</head>
 	<body>
+		<div class="load-kro2 hidden">
+			<p>Hold Tight! We are making something special for you!!!</p>
+			<img src="res/497.gif" alt="">
+		  </div>
 		<div class="section1">
 			<div class="image_secondary">
-				<img src="res/1586349622virus 1.png" alt="" />
+				<img src="res/1586349622virus 1.png" alt=""  />
 			</div>
 			<div class="comments">
 				<div class="comment_box">
@@ -51,83 +55,52 @@
 		</div>
 		<div class="section2">
 			<div class="image_primary">
-				<img src="res/Group 1.png" alt="" />
+				<img src="res/Group 1.png" alt=""  class="imga" />
 			</div>
 			<div class="cards">
-				<div class="card">
-					<div class="inner-card ">
-                        <form action="">
-                            <div class="iname">
-                                <label for="namea">Task:</label>
-                                <input type="text" name="namea" />
-                            </div>
-                            <div class="priority">
-                                <!-- Default unchecked -->
-                                <div class="custom-control custom-radio">
-                                    <input
-                                        type="radio"
-                                        class="custom-control-input p1"
-                                        id="defaultUnchecked"
-                                        name="defaultExampleRadios"
-                                        value="p1"
-                                    />
-                                    <label class="custom-control-label" for="defaultUnchecked"
-                                        >P1</label
-                                    >
-                                </div>
-                                <div class="custom-control custom-radio">
-                                    <input
-                                        type="radio"
-                                        class="custom-control-input p2"
-                                        id="defaultChecked"
-                                        name="defaultExampleRadios"
-                                        value="p2"
-                                        checked
-                                    />
-                                    <label class="custom-control-label" for="defaultChecked"
-                                        >P2</label
-                                    >
-                                </div>
-                                <div class="custom-control custom-radio">
-                                    <input
-                                        type="radio"
-                                        class="custom-control-input p3"
-                                        id="defaultUnchecke"
-                                        name="defaultExampleRadios"
-                                        value="p3"
-                                    />
-                                    <label class="custom-control-label" for="defaultUnchecke"
-                                        >P3</label
-                                    >
-                                </div>
-                            </div>
-                            <div class="time">
-                                <label for="timer">Expected time(in min):</label>
-                                <input type="number" name="timer" val=120>
-
-                            </div>
-                            <div class="stime">
-                                <label for="time">Start time:</label>
-                                <input type="time" value="14:00">
-                            </div>
-                            <div class="strictness">
-                                <label for="strictness">Strictness Level: </label>
-                                <input type="range" min="1" max="5" value="3" class="slider" id="strictness_level" name="strictness">
-                            </div>
-                            <button type="submit" class="btn btn-elegant">Submit</button>
-                        </form>
+				<div class="inner-card">
+					<div class="iname">
+						<label for="namea">Task:</label>
+						<input type="text" class="task" name="namea" />
 					</div>
+					
+					<div class="time">
+						<label for="timer">Expected time(in min):</label>
+						<input type="number" class="duration" name="timer" val=120>
+				
+					</div>
+					<div class="stime">
+						<label for="time">Start time:</label>
+						<input type="time" class="start_time" value="14:00">
+					</div>
+					<div class="strictness">
+						<label for="strictness">Strictness Level: </label>
+						<input type="range" min="1" max="5" value="3" class="slider" id="strictness_level" name="strictness">
+					</div>
+					<button class="btn add-task btn-elegant btn-md">Submit</button>
+				</div>
+				<div class="card">
 				</div>
 				<div class="btns">
 					<div class="roar btn-">
 						<img src="res/Rectangle6.png" alt="" />
 					</div>
-					<div class="fab btn-">
-						<img src="res/mdi_add_circle_outline.png" alt="" />
-					</div>
 				</div>
 			</div>
 		</div>
+		<div class="section1">
+			<h1>Tasks Added Till Now</h1>
+
+		</div>
+		
+
+
+
+
+
+
+
+
 		<script src="js/index.js"></script>
 		<!-- JQuery -->
 		<script
