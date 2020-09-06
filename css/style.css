@@ -5,7 +5,7 @@
 }
 body {
 	display: grid;
-	grid-template-columns: 0.5fr 2.6fr 0.8fr;
+	grid-template-columns: 0.5fr 2.6fr 1.5fr;
 }
 .image_sec {
 	width: 218px;
@@ -129,6 +129,7 @@ body {
 	}
 }
 .chat{
+	position: absolute;
     display: flex;
     width:300px;
     height:289px;
@@ -136,4 +137,14 @@ body {
     background: url("../res/Rectangle7.png");
     justify-content: center;
     align-items: center;
+}
+.section1 h1{
+	font-size:2.5rem;
+	
+}
+.naya_bacha{
+	background:rgba(43, 182, 11, 0.712);
+	padding:1rem;
+	border-radius: 2rem;
+	margin-bottom:1rem;
 }
