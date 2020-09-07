@@ -148,3 +148,10 @@ body {
 	border-radius: 2rem;
 	margin-bottom:1rem;
 }
+input{
+	background:rgba(5, 3, 3, 0.418);
+	border-radius:1rem;
+	padding:0rem 0.3rem;
+	color:#fff;
+	/* width:5rem; */
+}
